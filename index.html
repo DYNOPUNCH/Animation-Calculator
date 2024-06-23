@@ -19,29 +19,61 @@
         <![endif]-->
 
 
-        <div class="container">
+
+        <div class="container p-3">
+
+            <!-- Frames per Second -->
 
             <h3>Frames Per Second</h3>
-            <label for="fps_l">FPS: </label>
-            <input type="text" name="fps_l" id="fps_l"><br>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">FPS</span>
+                <input type="text" id="fps_l" class="form-control" placeholder="Example: 24" aria-label="fps" aria-describedby="basic-addon1">
+            </div>
             <h3>Time</h3>
-            <label for="Minuet_l">Minuet: </label>
-            <input type="text" name="Minuet_l" id="Minuet_l"><br>
-            <label for="Second_l">Second: </label>
-            <input type="text" name="Second_l" id="Second_l"><br>
-            <label for="Milli_l">Millisecond: </label>
-            <input type="text" name="Milli_l" id="Milli_l"><br>
-        
+
+            <!-- Minuet(s) -->
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Minuet(s)</span>
+                <input type="text" id="Minuet_l" class="form-control" placeholder="Example: 1" aria-label="fps" aria-describedby="basic-addon1">
+            </div>
+
+            <!-- Second(s) -->
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Seconds(s)</span>
+                <input type="text" id="Second_l" class="form-control" placeholder="Example: 1" aria-label="fps" aria-describedby="basic-addon1">
+            </div>
+
+            <!-- Millisecond(s) -->
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Milliseconds(s)</span>
+                <input type="text" id="Milli_l" class="form-control" placeholder="Example: 1" aria-label="fps" aria-describedby="basic-addon1">
+            </div>
+
+            <!-- Button for calculating the result. -->
+
+            <div class="d-grid gap-2">
+                <button onclick="calculateFrames()" class="btn btn-primary" type="button">Calculate!</button>
+            </div>
+
+            <br>
+
+            <!-- Calculated Result-->
+
+            <div class="container bg-secondary rounded text-light p-3">
+                <center>
+                    <b>
+                        <span>Result: </span>
+                        <span id="result"></span>
+                    </b>
+                </center>   
+            </div>
+
         </div>
 
-
-
-
-        <button onclick="calculateFrames()">Submit</button>
-
-        <div>Result: </div>
-        <b><div id="result"></div></b>
-        
-        <script src="script.js" async defer></script>
+        <script src="src/script.js" async defer></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" async defer></script>
     </body>
 </html>
