@@ -10,23 +10,31 @@
         <title>Animation Frame Calulator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="src/main.css">
+
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <h3>Frames Per Second</h3>
-        <label for="fps_l">FPS: </label>
-        <input type="text" name="fps_l" id="fps_l"><br>
-        <h3>Time</h3>
-        <label for="Minuet_l">Minuet: </label>
-        <input type="text" name="Minuet_l" id="Minuet_l"><br>
-        <label for="Second_l">Second: </label>
-        <input type="text" name="Second_l" id="Second_l"><br>
-        <label for="Milli_l">Millisecond: </label>
-        <input type="text" name="Milli_l" id="Milli_l"><br>
+
+        <div class="container">
+
+            <h3>Frames Per Second</h3>
+            <label for="fps_l">FPS: </label>
+            <input type="text" name="fps_l" id="fps_l"><br>
+            <h3>Time</h3>
+            <label for="Minuet_l">Minuet: </label>
+            <input type="text" name="Minuet_l" id="Minuet_l"><br>
+            <label for="Second_l">Second: </label>
+            <input type="text" name="Second_l" id="Second_l"><br>
+            <label for="Milli_l">Millisecond: </label>
+            <input type="text" name="Milli_l" id="Milli_l"><br>
+        
+        </div>
+
+
 
 
         <button onclick="calculateFrames()">Submit</button>
