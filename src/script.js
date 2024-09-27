@@ -1,5 +1,6 @@
 var button = document.getElementById("result");
 var release = true;
+var buttonSubmit = document.getElementById("submitButton");
 
 // Checks if a variable is null or empty.
 function validate(a)
@@ -64,3 +65,4 @@ function calculateFrames()
     button.innerHTML = fps * seconds + fps * (milliseconds / 1000) + fps * (minuets * 60);
 }
 
+buttonSubmit.addEventListener('click', calculateFrames, false);
