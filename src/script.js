@@ -65,4 +65,9 @@ function calculateFrames()
     button.innerHTML = fps * seconds + fps * (milliseconds / 1000) + fps * (minuets * 60);
 }
 
-buttonSubmit.addEventListener('click', calculateFrames, false);
+$("#submitButton").on('click', calculateFrames);
+
+//buttonSubmit.addEventListener('click', calculateFrames, false);
+
+var elements = $('.input-group span').css({'background-color': ''})
+
