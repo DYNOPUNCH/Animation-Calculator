@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+
+<html lang="en">
     <head>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Animation Frame Calulator</title>
+        <title>Animation Frame Calculator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="src/main.css">
@@ -16,9 +13,6 @@
 
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
         <div class="container p-3">
 
@@ -26,7 +20,7 @@
 
             <h4>Frames Per Second</h4>
             <div class="input-group mb-3">
-                <span class="input-group-text fw-bold left-bar" id="basic-addon1" >FPS</span>
+                <span class="input-group-text fw-bold left-bar" >FPS</span>
                 <input type="text" id="fps_l" class="form-control" placeholder="Example: 24" aria-label="fps" aria-describedby="basic-addon1">
             </div>
             <h4>Time</h4>
@@ -34,21 +28,21 @@
             <!-- Minuet(s) -->
 
             <div class="input-group mb-3">
-                <span class="input-group-text fw-bold left-bar" id="basic-addon1">Minuet(s)</span>
+                <span class="input-group-text fw-bold left-bar">Minuet(s)</span>
                 <input type="text" id="Minuet_l" class="form-control" placeholder="Example: 1" aria-label="fps" aria-describedby="basic-addon1">
             </div>
 
             <!-- Second(s) -->
 
             <div class="input-group mb-3">
-                <span class="input-group-text fw-bold left-bar" id="basic-addon1">Seconds(s)</span>
+                <span class="input-group-text fw-bold left-bar">Seconds(s)</span>
                 <input type="text" id="Second_l" class="form-control" placeholder="Example: 1" aria-label="fps" aria-describedby="basic-addon1">
             </div>
 
             <!-- Millisecond(s) -->
 
             <div class="input-group mb-3">
-                <span class="input-group-text fw-bold left-bar" id="basic-addon1">Milliseconds(s)</span>
+                <span class="input-group-text fw-bold left-bar">Milliseconds(s)</span>
                 <input type="text" id="Milli_l" class="form-control" placeholder="Example: 1" aria-label="fps" aria-describedby="basic-addon1">
             </div>
 
@@ -62,21 +56,19 @@
 
             <!-- Calculated Result-->
 
-            <div class="container bg-secondary rounded text-light p-3 d-flex justify-content-center align-items-center fs-3 fw-bold" style="height: 100px;">
-                <center>
+            <div class="container bg-secondary rounded text-light p-3 d-flex justify-content-center align-items-center fs-3 fw-bold text-center" style="height: 100px;">
                     <b>
                         <span id="result"></span>
                         <span id="a-length"></span>
                     </b>
-                </center>   
             </div>
 
         </div>
 
 
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" async defer></script>
-        <script src="node_modules\jquery\dist\jquery.min.js" async defer></script>
-        <script src="src/script.js" async defer></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+        <script src="src/script.js"></script>
         
     </body>
 </html>
